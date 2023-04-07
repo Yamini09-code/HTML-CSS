@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS in HTML</title>
+    <!-- this is external css  -->
+    <style>
+        /* inline css>>internal css  */
+        /* amongst internal and external which is written at last will get more preference as it overwrites previous properties */
+        /* this is internal css by adding style tag in head */
+        p{
+            color:purple;
+            background-color: aqua !important;
+            /* can also make css above more important by writing !important  */
+        }
+        </style>
+        <link rel="stylesheet" href="selectors.css">
+        <!-- css which comes below will get more preference amongst internal and external css-->
+</head>
+<body>
+    <h1>this is css tutorial</h1>
+    <p>this is a para</p>
+    <!-- <p style = "color:blue; background-color: yellow;">this is done with inline css</p> -->
+</body>
+</html>

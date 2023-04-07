@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, width, Border and background</title>
+    <style>
+        #firstpara{
+            background-color: yellow;
+            height:500px;
+            width:455px;
+            border-width:4px;
+            border-color:green;
+            border-style:solid;
+            border-radius:23px;
+            border: 2px solid blueviolet;/*width style color*/
+
+        }
+        #secondpara{
+            background-color: yellow;
+            height:500px;
+            width:455px;
+            /* all four borders have different colors*/
+            border-top:2px solid violet;
+            border-bottom: 3px solid green;
+            border-left: 5px solid blue;
+            border-right: 9px solid red;
+            /*different radius at different sides*/
+            border-top-left-radius:35px;
+            border-top-right-radius: 45px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 10px;
+
+        }
+
+        #thirdpara{
+            height:1100px;
+            width:500px;
+           background-image: url('https://yt3.ggpht.com/ytc/AL5GRJX7LBvNaQFl0ODpVbrt2F4ajG_wY0fKpZGsEqi8Jw=s88-c-k-c0x00ffffff-no-rj') ;
+           border: 2px solid blue;
+           background-repeat: no-repeat;/*can have repeart-x or repeat-y also to repeat in particular direction whereas in no repeat image will come only once*/
+           background-position: 192px 34px;/*has values in x and y respectively*/
+           background-position: top center;/*x will have top center bottom and y will have left right and center*/
+
+        }
+    </style>
+</head>
+<body>
+    <h3>This is heading</h3>
+    <p id = "firstpara">this is a paragraph</p>
+    <h3>This is second heading</h3>
+    <p id = "secondpara">this is my second paragraph</p>
+    <h3>This is third heading</h3>
+    <p id = "thirdpara">this is my third paragraph</p>
+
+</body>
+</html>

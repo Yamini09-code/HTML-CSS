@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors</title>
+    <style>
+
+        /*
+        A pseudo-class is used to define a special state of an element.
+
+For example, it can be used to:
+
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus
+*/
+        .container{
+            border:2px solid red;
+            background-color: yellow;
+            padding:34px;
+            margin:34px auto;
+            width:666px;
+        }
+        a{
+
+            text-decoration: none;/*underline in hyperlink is text decoration prop*/
+            color: black;
+        }
+        /* a:link{
+            till link is unvisited
+          font-style: bold;
+         
+        } */
+        a:hover{/*pseudo selector property*/
+            /*when hovering over a*/
+            color:white;
+            background-color: black;
+        }
+        a:visited{/*once link is visited */
+            color:aqua;
+        }
+        a:active{
+            background-color:darkblue;/*when it is being clicked*/
+        }
+        .btn{
+            background: crimson;
+            padding:6px;
+            border:none;/*removes border*/
+            cursor: pointer;/*on hovering cursor turns into pointer*/
+            font-size: 13px;
+            border-radius: 4px;
+
+
+        }
+        .btn:hover{
+           background-color: chartreuse;
+           font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           font-style: italic;
+           border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>this is my heading</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum laboriosam eligendi fugiat aliquid recusandae odit dicta ad ratione sint, dolores fuga consectetur odio ullam placeat quasi! Eius maiores consequuntur cum provident inventore adipisci optio.</p>
+
+        <a href="" class="btn">Read more</a>
+        <button class="btn">Contact us</button>
+    </div>
+</body>
+</html>

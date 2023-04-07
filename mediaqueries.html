@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+.box{
+    background-color: red;
+    color:white;
+    font-size: 72px;
+    text-align: center;
+    display: none;
+}
+/* to support media type only screen  */
+@media only screen and (max-width:400px){
+    /* in between 0 and max 500 display will become block through media querie  */
+    #box1{
+        display:block;
+        background-color: blueviolet;
+    }
+}
+    @media only screen and (max-width:500px) and (min-width:400px){
+    /* in between 0 and max 500 display will become block through media querie  */
+    #box2{
+        display:block;
+        background-color: aqua;
+    }
+}
+@media only screen and (max-width:600px) and (min-width:500px){
+    /* in between 0 and max 500 display will become block through media querie  */
+    #box3{
+        display:block;
+        background-color:brown;
+    }
+}
+@media only screen and (min-width:600px){
+    /* in between 600 and max  display will become block through media querie  */
+    #box4{
+        display:block;
+        background-color: black;
+        
+    }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <!-- if the provided condition on width holds true then CSS will be injected  -->
+<div class="box" id="box1">Iphone</div>
+<div class="box" id="box2">Tablet</div>
+<div class="box" id="box3">Computer</div>
+<div class="box" id="box4">Wide screen computer</div>
+
+</div>
+</body>
+</html>

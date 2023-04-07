@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and input tag</title>
+</head>
+<body>
+    <!-- action is the endpoint where all data will be submitted of the form  -->
+    <form action="backedn.php">
+        <!-- name is the name by which backend will recognize and access the inputted values, name will act as key to access the values entered by user -->
+        <!-- input is inline element whereas div is block elememnt -->
+        <!--label tag-->
+        <!-- for of label should be same as of id value it is referred to -->
+        <!-- id is unique for that element -->
+        <label for="name">Name</label>
+        <div>
+           <input type="text" name = "myname" id ="name">
+        </div>
+        <div>
+            Role: <input type="text" name = "myrole">
+        </div>
+        <div>
+           Email: <input type="email" name="myemail" id="">
+        </div>
+        <div>
+            Date:<input type="date" name="mydate" id="">
+        </div>
+        <div>
+            <!-- in type number we can also write e not any other alphabet -->
+            Number:<input type="number" name="mynumber" id="">
+        </div>
+     <label for="box">are u eligible?</label>
+        <div>
+            <input type="checkbox" name="myeligibility" id="box" checked>
+        </div>
+        <div>
+            gender: male <input type="radio" name="female" id=""> female <input type="radio" name="female" id=""> other <input type="radio" name="female" id="">
+        </div>
+        <div>
+           Write about yourself? <br><textarea name="textarea" id="" cols="30" rows="10">this is default</textarea>
+        </div>
+        <label for="car">Car</label>
+        <select name="" id="car">
+            <!-- value is what value will be sent to server when form is submitted -->
+            <option value="ind">indica</option>
+            <option value="s">swift</option>
+            <option value="t" selected>thar</option>
+
+        </select>
+    <div>
+        <input type="submit" value="submit now">
+        <!-- value will be shown on the button  -->
+    </div>
+    <div>
+        <input type="reset" value="reset now">
+    </div>
+</form>
+</body>
+</html>

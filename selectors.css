@@ -1,0 +1,11 @@
+/* css takes responisbility of deisgn  */
+p{
+    color:blue; 
+    background-color: hotpink;
+    /* selector - property - value  */
+    /* this will select all para  */
+}
+/* three ways to add css to the markup html 
+inline css - add directly using style attribute
+internal css - inside head tags in <style> tags
+external css - separate inside a .css style sheet, write css in .css file then include that file to markup */

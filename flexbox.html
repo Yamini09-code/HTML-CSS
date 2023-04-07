@@ -1,0 +1,101 @@
+<!-- it used to make layouts -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        .container{
+            height:344px;
+            width:100%;
+            border:2px solid black;
+         /* initiated flex box here  */
+         /* i can use flex properties now  */
+            display: flex;
+
+            /* properties for flex container  */
+            /* flex-direction: row; */
+            /* by default flex direction is row  */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            /* flex-wrap: wrap;  */
+            /* flex-wrap: wrap-reverse; */
+            /* bydefault its no wrap  */
+
+            flex-flow: row wrap;
+            /* to put flex direction and flex wrap together  */
+
+
+/* justify content will justify items in horizontal direction  */
+            /* to align items at center  */
+            /* horizontally centered  */
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;
+
+
+
+            /* align items aligns items in vertical direction  */
+                /* vertically center  */
+            align-items: center; 
+            align-items: flex-end;
+            align-items: flex-start;
+            align-items: stretch;
+
+
+            
+        }
+        .items{
+            /* these times are flex times now  */
+        
+            width:200px;
+            height:200px;
+            background-color: tomato;
+            border:2px solid green;
+            margin:10px;
+            padding:3px;
+        }
+        #item1{
+            /* flexbox item with max order will go at last position  */
+                   order:2;
+                   /* flex grow prop will make item grow with that proportion when container is stretched */
+                   /* flex-grow: 3; */
+                   /* flex-shrink: 2; */
+        }
+        #item2{
+
+            order:4;
+            /* negative no is not allowed in flex grow and shrink  */
+            /* flex-grow: 2; */
+            /* higher the shrink no more it shrinks in responsive  */
+            /* flex-shrink: 5; */
+            flex-basis: 320px;
+            /* when flex direction set to row flex basis controls width but column it controls height  */
+        }
+        #item3{
+
+
+           /* flex grow slefx shrink flex basis  */
+            flex: 2 2 344px;
+
+            align-self:flex-end;
+            align-self:flex-start;
+            align-self:center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox tutorial</h1>
+    <div class="container">
+        <div class="items" id="item1">First</div>
+        <div class="items" id="item2">Second</div>
+        <div class="items" id="item3">Third</div>
+       
+    </div>
+</body>
+</html>

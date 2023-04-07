@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+
+    <style>
+        /*whenever u want to use float or auto in margin always give width alongside*/
+        *{
+            box-sizing: border-box;
+
+        }
+        h1{
+            width:300px;
+            margin:auto;
+        }
+        .container{
+            width:900px;
+            height:1000px;
+            border: 3px solid green;
+            margin:45px auto;/*auto will bring it at the center from left and right, auto will get the margin at exact center*/
+            background-color: yellow;
+
+
+        }
+        .item{
+            border:3px solid gray;
+            margin: 12px 3px;
+            padding: 12px 13px;
+            background-color: rgb(210, 137, 137);
+
+        }
+        #fruits{
+            float:left;
+            width:48%;
+        }
+        #computer{
+            float:right;
+            width:48%;
+
+
+
+        }
+        #stationary{
+            float:left;
+            width:100%;
+            /*clear: both so no left or right element overlaps*/
+            clear:left;/*it says no float left elements overlap on me same we could have written float right so no float right element overlaps*/
+        }
+        #glasses{
+            float:left;
+            width:100%;
+            /*clear: both so no left or right element overlaps*/
+            clear:both;/*it says no float left elements overlap on me same we could have written float right so no float right element overlaps*/
+        }
+        p,h3{
+
+            /*text alignments are left right center justify*/
+            text-align: left;
+            text-align: right;
+            text-align: center;
+            text-align:justify;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruits" class="item">
+            <h3>fruits</h3>
+           <p id="fruitspara" class="para">Lorem ipsum dolor Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia non, suscipit vel similique quam soluta esse alias temporibus, quae, consequatur ullam iste doloremque. Recusandae neque cumque, modi ipsam iusto quis dol. Cupiditate repudiandae facere ullam amet voluptatem, consequatur maxime quo?non recusandae ab, praesentium fugiat. Alias recusandae voluptate sit quas expedita eius.</p>
+         
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+           <p id="computerpara" class="para">Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nostrum soluta aut deserunt veritatis, laboriosam eveniet autem dolor voluptate itaque possimus min mollitia amet nesciunt natus dolor unde, dignissimos cupiditate! sit ametlorem34 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur modi debitis ducimus, hic laboriosam itaque.
+            .</p>
+         
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+           <p id="stationarypara" class="para">Lorem ipsumlorem34
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis delectus corrupti, ut minima, qui nulla accusantium mollitia laboriosam quos iure possimus impedit quae nobis cumque nemo iusto repellat exercitationem facilis neque consectetur aut. Soluta? dolor sit amet.</p>
+         
+        </div>
+        <div id="glasses" class="item">
+            <h3>glasses</h3>
+           <p id="glassespara" class="para">Lorem ipsumlorem34
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis delectus corrupti, ut minima, qui nulla accusantium mollitia laboriosam quos iure possimus impedit quae nobis cumque nemo iusto repellat exercitationem facilis neque consectetur aut. Soluta? dolor sit amet.</p>
+         
+        </div>
+    </div>
+</body>
+</html>

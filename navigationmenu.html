@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation menu</title>
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+      .navbar{
+        background-color: black;
+        border-radius: 20px;
+        margin:14px 32px;
+      }
+      
+      .navbar ul{
+        overflow:auto;/*will bring back the overflowed elements back inside parent */
+      }
+      .navbar li{/*here we are moving in li inside navbar*/
+        float:left;
+       list-style:none;
+        padding: 3px 3px;
+        margin:13px 20px;
+      }
+      .navbar li a{
+        text-decoration: none;
+        color:white;
+        padding: 3px 3px;
+
+
+      }
+      .navbar li a:hover{
+        text-decoration: none;
+        color:yellow;
+        padding: 3px 3px;
+
+      }
+      .searchbox{
+        color:red;
+        width:100px;
+        float:right;
+        margin:10px 100px;
+       
+      }
+      .navbar input{
+        border:2px solid yellow;
+        border-radius:10px;
+        padding:5px 15px;
+        width:170px;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Career</a></li>
+                <div class="searchbox">
+                    <input type="text" name="searchboxy" id="search" placeholder="search this website">
+                    <!-- placeholder text will display in prior -->
+                </div>
+            </ul>
+        </nav>
+
+    </header>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in CSS</title>
+    <style>
+        /* positions in css -> absolute, relative, static (by default), fixed, sticky */
+        /*by default positions are static*/
+        .box{
+            border:2px solid red;
+            display:inline-block;
+            width:100px;
+            height: 150px;
+            margin:2px;
+        }
+        #box3{
+            /* relative to its normal position now box3 can move */
+            /* top bottom left right can be used  */
+            /* will have spaces/gaps at its normal position  */
+            position:relative;
+            top:34px;
+            left:13px;
+            right:1px;
+        }
+
+        #box2{
+            /* absolute is with respect to its direct first parent element here parent is container */
+            position:absolute;
+            left:14px;
+            top:17px;
+        }
+        #box1{
+            /* the position will remain fixed even when we scroll the screen and its position will be fixed respect to browser */
+            position:fixed;
+            right:4px;
+            bottom:2px;
+        }
+        #box4{
+            position:sticky;
+            top:15px;
+            /* with respect to container.it is relative before scroll when we scroll it becomes fixed, when we come nack to original it becomes relative again.It will remain fixed till the end of the conatiner  */
+
+
+        }
+        .conatiner{
+            border:2px solid black;
+        background-color: aqua;
+        height:900px;
+        }
+        .conatiner2{
+            height:500px;
+            background-color:red;
+            height:1000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+    <div class="box" id="box1">chat with us</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+   
+
+    </div>
+    <div class="conatiner2">
+</div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selectors </title>
+    <style>
+        body{
+            background-color: black;
+            color:white;
+            /* background: url("/img/anton-nikolov-JKeIu3jjJFw-unsplash.jpg") no-repeat center center/cover;  */
+        }
+
+        /* technique list  */
+        header::before{
+            background: url("/img/anton-nikolov-JKeIu3jjJFw-unsplash.jpg") no-repeat center center/cover;
+            content:"";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index:-1;
+            top:0;
+            left:0;
+            opacity: 1;
+        }
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+section::before{
+    content: "this is a content";
+}
+section::after{
+    content:"this is another content";
+}
+section{
+    height:344px;
+ 
+    margin:3px ;
+   display: flex;
+   flex-direction: column;
+    align-items:center;
+    justify-content: center;
+
+}
+li{
+    list-style: none;
+    padding:34px 23px;
+}
+.navigation{
+    display: flex;
+}
+h3{
+    font-size: 4rem;
+}
+p{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About Us</li>
+                <li class="item">Contact Us</li>
+                <li class="item">Services</li>
+            </ul>
+        </nav>
+     
+    </header>
+    
+    <section>
+        <h3>Welcome to coding world</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum est voluptates non in, atque dolores? Velit odio, non excepturi vero magni rem maiores quidem quasi deserunt dolor earum nostrum recusandae ut tempore totam fugit?.</p>
+    </section>
+    <hr>
+    
+</body>
+</html>

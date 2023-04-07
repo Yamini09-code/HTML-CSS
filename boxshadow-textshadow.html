@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box shadow and text shadow</title>
+    <style>
+      .container {
+        display: flex;
+      }
+      .card {
+        border: 2px solid red;
+        margin: 23px 12px;
+        background-color: aqua;
+        /* x offset y offset blur-radius spread-radius color */
+        /* can be negative and it will change the direction  */
+        box-shadow: 10px 13px 10px 12px yellow;
+
+        /* inset shadowing  */
+        box-shadow: inset 10px 13px red;
+        /* multiple shadows */
+        box-shadow: 10px 13px violet, 5px 15px yellow;
+      }
+      .card h2{
+text-shadow: 1px 3px 5px violet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" id="card1">
+        <h2>Card 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum autem
+          laboriosam minus sequi quidem magni itaque dolor iste fugiat
+          doloribus.
+        </p>
+      </div>
+      <div class="card" id="card2">
+        <h2>Card 2</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
+          provident unde rerum eveniet deserunt possimus est. Eius quae quis
+          est.
+        </p>
+      </div>
+      <div class="card" id="card3">
+        <h2>Card 3</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+          cumque explicabo veritatis ex possimus. Ipsam sunt dolor doloremque
+          error magni!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

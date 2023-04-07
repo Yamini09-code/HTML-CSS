@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+  
+  *{/*box sizing is border box*/
+
+       box-sizing: border-box;
+       margin:0;/*initial all elements will have margin padding 0*/
+       padding:0;
+
+    }
+    .container{
+        background-color: aqua;
+        border: 2px solid violet;
+        padding:9px;/*padding from all directions*/
+        margin:34px;/*margin from all directions*/
+        /*we can set top bottom left right padding/margin like this*/
+        padding-top: 4px;
+        padding-bottom:7px;
+        padding-left:53px;
+        padding-right:5px;
+
+        margin-top: 56px;
+        margin-bottom: 90px;
+        margin-left: 89px;
+        margin-right: 80px;
+
+        /*padding/margin top right bottom left -> TRBL   */
+        padding: 4px 19px 8px 25px;
+        margin: 9px 4px 5px 6px;
+
+
+        /*padding: y(top/bottom)  x(left/right)*/
+        padding: 45px 62px;
+        margin: 56px 34px;
+        
+        border-radius: 34px;
+        width: 250px;
+        box-sizing: border-box;/*when we dont want the width of element to change coz of change in padding or margin*/
+
+        
+    }
+  body{
+    background-color: blue;
+  }
+  
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>this is my heading</h3>
+       <p id="first">Lorem ipsum dolor sit.</p>
+    </div>    
+    <div class="container">
+        <h3>this is my heading</h3>
+       <p id="second">Lorem ipsum dolor sit.</p>
+    </div>   
+    <div class="container">
+        <h3>this is my heading</h3>
+       <p id="third">Lorem ipsum dolor sit.</p>
+    </div>   
+     
+
+
+</body>
+</html>

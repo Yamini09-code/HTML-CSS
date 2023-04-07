@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More on CSS selectors</title>
+    <style>
+      h1 {
+        background-color: red;
+        color: black;
+        text-align: center;
+      }
+      div p {
+        /* kisi bhi div ke kitne bhi andar p mil jaye sabme prop lag jayegi  */
+        color: yellow;
+        font-weight: bold;
+        background-color: green;
+      }
+      div li p{
+        /* p is contained by any li which is contained by any div  */
+        /* div ke andar li ke andar p will be targeted  */
+        color:blue;
+      }
+      /* div>p{
+        /* if p is right inside div  
+        div is direct parent of p
+        div's direct child p will be targeted -> direct exact next  
+         color:pink;
+      } */ 
+      div +p{
+        /* if p is right after div  */
+        /* p is next sibling of div  */
+        /* div is pichla sibling of p  */
+        /* vo paragraph jiska pichla sibling div hai will be targeted  */
+        color:white;
+        background-color: red;;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+      <div class="row">
+        <ul>
+          <li class="item"><p>this is another paragraph</p></li>
+        </ul>
+        <p>This is a paragraph</p>
+      </div>
+      <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+  </body>
+</html>
